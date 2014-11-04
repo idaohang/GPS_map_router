@@ -1,0 +1,33 @@
+﻿Build started 2014/11/1 19:06:03.
+     1>Project "D:\JohnGitHub\AutonomousVehicle\GPS_map_router\GPS_map_router\GPS_map_router.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\GPS_map_router.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GPSMap.cpp Node.cpp
+         GPSMap.cpp
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\utility(79): error C2440: 'return' : cannot convert from 'GPS_MAP_ROUTER::LOCATION ' to 'GPS_MAP_ROUTER::LOCATION (&&)'
+                 You cannot bind an lvalue to an rvalue reference
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(614) : see reference to function template instantiation '_Ty (&&std::forward<_Ty>(double (&)[3]))' being compiled
+                 with
+                 [
+                     _Ty=GPS_MAP_ROUTER::LOCATION
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(606) : while compiling class template member function 'void std::vector<_Ty>::_Assign_rv(std::vector<_Ty> &&)'
+                 with
+                 [
+                     _Ty=GPS_MAP_ROUTER::LOCATION
+                 ]
+                 d:\johngithub\autonomousvehicle\gps_map_router\gps_map_router\gpsmap.cpp(85) : see reference to class template instantiation 'std::vector<_Ty>' being compiled
+                 with
+                 [
+                     _Ty=GPS_MAP_ROUTER::LOCATION
+                 ]
+         Generating Code...
+         Compiling...
+         Node.cpp
+         Generating Code...
+     1>Done Building Project "D:\JohnGitHub\AutonomousVehicle\GPS_map_router\GPS_map_router\GPS_map_router.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.19
